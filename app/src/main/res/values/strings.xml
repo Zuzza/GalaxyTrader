@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Galaxy Trader</string>
+    <string name="textTitle" translatable="false">App</string>
+    <string name="title_activity_in_cargo" translatable="false">InCargo</string>
+    <string name="next" translatable="false">Next</string>
+    <string name="previous" translatable="false">Previous</string>
+    <string name="inCargo_Cargo">In Cargo: </string>
+    <string name="marketplace_main">Marketplace</string>
+    <string name="money_main">Money: </string>
+    <string name="cargo_main" translatable="false">Cargo</string>
+    <string name="fuel_main">Fuel</string>
+    <string name="depart_main">Depart</string>
+    <string name="options_main">Options</string>
+    <string name="welcome_to">Welcome to </string>
+    <string name="welcome_to_main">Welcome to </string>
+    <string name="cargo_empty">Cargo is empty</string>
+    <string name="buy">Buy</string>
+    <string name="sell">Sell</string>
+    <string name="cancel" translatable="false">Cancel</string>
+    <string name="stock_bought_for">Bought for:</string>
+    <string name="stock_price_range">Price range: </string>
+    <string name="stock_price">Price:</string>
+    <string name="current_planet_depart">Current location</string>
+    <string name="not_enough_fuel_msg">Not enough fuel!</string>
+    <string name="Cargo_is_empty">Cargo is empty</string>
+    <string name="not_enough_money">Not enough money!</string>
+    <string name="not_enough_cargo_space">Not enough cargo space!</string>
+    <string name="how_many_tons_of_fuel">How many tons of fuel would you like to buy?</string>
+    <string name="how_much_sell">How much would you like to sell?</string>
+    <string name="how_much_buy">How much would you like to buy?</string>
+    <string name="how_much_pay_back_loan">How much loan would you like to pay back?</string>
+    <string name="not_enough_fuel_space">Not enough fuel tank capacity!</string>
+    <string name="not_enough_stock">Not enough stock on board!</string>
+    <string name="total">Total: </string>
+    <string name="you_owe_money">Money owe: </string>
+    <string name="pay_back">Pay back</string>
+    <string name="loan">Loan:</string>
+    <string name="not_enough_loan">You don\'t owe that much!</string>
+    <string name="you_won" >You Won!</string>
+</resources>

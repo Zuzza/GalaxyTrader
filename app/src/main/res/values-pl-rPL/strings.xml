@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Galaxy Trader</string>
+    <string name="inCargo_Cargo">"W Cargo: "</string>
+    <string name="marketplace_main">Rynek</string>
+    <string name="money_main">"Pieniadze: "</string>
+    <string name="fuel_main">Paliwo</string>
+    <string name="depart_main">Przelot</string>
+    <string name="options_main">Opcje gry</string>
+    <string name="cargo_empty">Cargo jest puste</string>
+    <string name="buy">Kup</string>
+    <string name="sell">Sprzedaj</string>
+    <string name="stock_bought_for">"Kupione za: "</string>
+    <string name="stock_price_range">"Wachanie cen: "</string>
+    <string name="stock_price">"Cena: "</string>
+    <string name="current_planet_depart">Obecna planeta</string>
+    <string name="not_enough_fuel_msg">Nie masz wystarczajacej ilosci paliwa!</string>
+    <string name="Cargo_is_empty">Cargo jest puste</string>
+    <string name="not_enough_money">Nie masz wystarczajacej ilosci pieniedzy!</string>
+    <string name="not_enough_cargo_space">Za malo miejsca w cargo!</string>
+    <string name="how_many_tons_of_fuel">Ile ton paliwa chcialbys kupic?</string>
+    <string name="how_much_sell">Ile chcialbys sprzedac?</string>
+    <string name="how_much_buy">Ile chcialbys kupic?</string>
+    <string name="not_enough_fuel_space">Nie masz wystarczjaco duzo miejsca w baku!</string>
+    <string name="not_enough_stock">Nie masz tyle w cargo!</string>
+    <string name="total">"Suma: "</string>
+    <string name="welcome_to">"Witaj na "</string>
+    <string name="welcome_to_main">"Witaj na "</string>
+    <string name="how_much_pay_back_loan">Ile dlugu chcialbys splacic?</string>
+    <string name="you_owe_money">"Suma nalezna: "</string>
+    <string name="pay_back">Splac</string>
+    <string name="loan">"Dlug: "</string>
+    <string name="not_enough_loan">Nie masz tyle dlugu!</string>
+    <string name="you_won">Wygrana!</string>
+</resources>

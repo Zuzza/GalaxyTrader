@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/stockCardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="12dp"
+        android:padding="3dp"
+        app:cardCornerRadius="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="4dp"
+            android:foregroundTint="@color/primaryLightColor"
+            android:minWidth="650dp">
+
+            <TextView
+                android:id="@+id/dashTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" - "
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="@+id/maxPriceTxt"
+                app:layout_constraintEnd_toStartOf="@+id/maxPriceNumTxt"
+                app:layout_constraintStart_toEndOf="@+id/minPriceNumTxt"
+                app:layout_constraintTop_toTopOf="@+id/maxPriceTxt"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <ImageView
+                android:id="@+id/stockImage"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="10dp"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline10"
+                app:layout_constraintStart_toStartOf="@+id/guideline8"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/rubberduck" />
+
+            <TextView
+                android:id="@+id/priceNumber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="1000"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="@+id/priceTxt"
+                app:layout_constraintEnd_toStartOf="@+id/guideline9"
+                app:layout_constraintStart_toEndOf="@+id/priceTxt"
+                app:layout_constraintTop_toTopOf="@+id/priceTxt" />
+
+            <Button
+                android:id="@+id/sellBtn"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="2dp"
+                android:padding="10dp"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:singleLine="true"
+                android:text="@string/sell"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="@+id/buyBtn"
+                app:layout_constraintEnd_toStartOf="@+id/guideline9"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/buyBtn"
+                app:layout_constraintTop_toTopOf="@+id/buyBtn" />
+
+            <Button
+                android:id="@+id/buyBtn"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:text="@string/buy"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/sellBtn"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@+id/guideline10"
+                app:layout_constraintTop_toBottomOf="@+id/inCargoTxt" />
+
+            <TextView
+                android:id="@+id/stockName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:text="Jelly Beans"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toStartOf="@+id/guideline9"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline10"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/priceTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/stock_price"
+                android:textAlignment="textStart"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="@+id/guideline10"
+                app:layout_constraintTop_toBottomOf="@+id/stockName" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.45" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.97" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.03" />
+
+            <TextView
+                android:id="@+id/maxPriceTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="2dp"
+                android:text="@string/stock_price_range"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="@+id/guideline10"
+                app:layout_constraintTop_toBottomOf="@+id/priceNumber" />
+
+            <TextView
+                android:id="@+id/inCargoTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="2dp"
+                android:text="@string/inCargo_Cargo"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="@+id/guideline10"
+                app:layout_constraintTop_toBottomOf="@+id/maxPriceTxt" />
+
+            <TextView
+                android:id="@+id/inCargoNumTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="0"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="@+id/inCargoTxt"
+                app:layout_constraintEnd_toStartOf="@+id/guideline9"
+                app:layout_constraintStart_toEndOf="@+id/inCargoTxt"
+                app:layout_constraintTop_toTopOf="@+id/inCargoTxt" />
+
+            <TextView
+                android:id="@+id/maxPriceNumTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="100"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="@+id/minPriceNumTxt"
+                app:layout_constraintEnd_toStartOf="@+id/guideline9"
+                app:layout_constraintStart_toEndOf="@+id/dashTxt"
+                app:layout_constraintTop_toTopOf="@+id/minPriceNumTxt" />
+
+            <TextView
+                android:id="@+id/minPriceNumTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="90"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="@+id/maxPriceTxt"
+                app:layout_constraintEnd_toStartOf="@+id/dashTxt"
+                app:layout_constraintStart_toEndOf="@+id/maxPriceTxt"
+                app:layout_constraintTop_toTopOf="@+id/maxPriceTxt"
+                app:layout_constraintVertical_bias="1.0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

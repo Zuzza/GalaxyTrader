@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTintMode="add"
+    android:maxHeight="180dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        app:cardCornerRadius="4dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="4dp"
+            android:foregroundTint="@color/primaryLightColor"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp">
+
+            <TextView
+                android:id="@+id/dashCargoTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:text=" - "
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/minPriceNumCargoTxt"
+                app:layout_constraintStart_toEndOf="@+id/minPriceNumCargoTxt"
+                app:layout_constraintTop_toTopOf="@+id/minPriceNumCargoTxt" />
+
+            <ImageView
+                android:id="@+id/stockCargoImage"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:padding="5dp"
+                android:scaleType="centerInside"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline10Cargo"
+                app:layout_constraintStart_toStartOf="@+id/guideline8Cargo"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/worms" />
+
+            <TextView
+                android:id="@+id/priceCargoNumber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:text="1000"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/priceCargoTxt"
+                app:layout_constraintEnd_toStartOf="@+id/guideline9Cargo"
+                app:layout_constraintStart_toEndOf="@+id/priceCargoTxt"
+                app:layout_constraintTop_toTopOf="@+id/priceCargoTxt" />
+
+            <TextView
+                android:id="@+id/stockCargoName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Jelly Beans"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                app:layout_constraintEnd_toStartOf="@+id/guideline9Cargo"
+                app:layout_constraintStart_toStartOf="@+id/guideline10Cargo"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/priceCargoTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="2dp"
+                android:text="@string/stock_bought_for"
+                android:textAlignment="textStart"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/guideline10Cargo"
+                app:layout_constraintTop_toBottomOf="@+id/stockCargoName" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline10Cargo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.45" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline9Cargo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.97" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline8Cargo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.03" />
+
+            <TextView
+                android:id="@+id/maxPriceCargoTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="2dp"
+                android:text="@string/stock_price_range"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/guideline10Cargo"
+                app:layout_constraintTop_toBottomOf="@+id/priceCargoTxt" />
+
+            <TextView
+                android:id="@+id/inCargoCargoTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/inCargo_Cargo"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline10Cargo"
+                app:layout_constraintTop_toBottomOf="@+id/maxPriceCargoTxt" />
+
+            <TextView
+                android:id="@+id/inCargoNumCargoTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:text="0"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/inCargoCargoTxt"
+                app:layout_constraintEnd_toStartOf="@+id/guideline9Cargo"
+                app:layout_constraintStart_toEndOf="@+id/inCargoCargoTxt"
+                app:layout_constraintTop_toTopOf="@+id/inCargoCargoTxt" />
+
+            <TextView
+                android:id="@+id/maxPriceNumCargoTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:text="100"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/dashCargoTxt"
+                app:layout_constraintEnd_toStartOf="@+id/guideline9Cargo"
+                app:layout_constraintStart_toEndOf="@+id/dashCargoTxt"
+                app:layout_constraintTop_toTopOf="@+id/dashCargoTxt" />
+
+            <TextView
+                android:id="@+id/minPriceNumCargoTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:text="90"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/maxPriceCargoTxt"
+                app:layout_constraintStart_toEndOf="@+id/maxPriceCargoTxt"
+                app:layout_constraintTop_toTopOf="@+id/maxPriceCargoTxt" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
